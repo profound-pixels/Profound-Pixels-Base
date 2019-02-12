@@ -28,6 +28,19 @@ $base-pre-border-radius:                         3px !default;
 
 // Body
 // ========================================================================
+html {
+    /* 1 */
+    font-family: $base-body-font-family;
+    font-size: $base-body-font-size;
+    font-weight: $base-body-font-weight;
+    line-height: $base-body-line-height;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 3 */
+    background: $base-body-background;
+    color: $base-body-color;
+    @if(mixin-exists(hook-base-body)) {@include hook-base-body();}
+}
 
 // @mixin hook-base-body(){}
 
