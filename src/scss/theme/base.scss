@@ -50,11 +50,13 @@ $base-pre-border-radius:                         3px !default;
 // ========================================================================
 
 .uk-h1 {
-    // custom styles for heading classes go here
+    font-family: $secondary-font-family;
+    font-size: $secondary-xxlarge-font-size;
 }
 
 .uk-h2 {
-    // custom styles for heading classes go here
+    font-family: $secondary-font-family;
+    font-size: $secondary-xlarge-font-size;
 }
 
 .uk-h3 {
