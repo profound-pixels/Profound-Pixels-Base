@@ -30,10 +30,10 @@ $base-pre-border-radius:                         3px !default;
 // ========================================================================
 html {
     /* 1 */
-    font-family: $base-body-font-family;
-    font-size: $base-body-font-size;
+    font-family: $global-font-family;
+    font-size: $global-font-size;
     font-weight: $base-body-font-weight;
-    line-height: $base-body-line-height;
+    line-height: $global-line-height;
     /* 2 */
     -webkit-text-size-adjust: 100%;
     /* 3 */
@@ -65,23 +65,38 @@ html {
 .uk-h1 {
     font-family: $secondary-font-family;
     font-size: $secondary-xxlarge-font-size;
+
+    @media (min-width: $breakpoint-medium) and (max-width: $breakpoint-medium-max) {
+        font-size: $secondary-xlarge-font-size;
+    }
+
+    @media (max-width: $breakpoint-small-max) {
+        font-size: $secondary-large-font-size;
+    }
 }
 
 .uk-h2 {
     font-family: $secondary-font-family;
-    font-size: $secondary-xlarge-font-size;
+    font-size: $secondary-medium-font-size;
 }
 
 .uk-h3 {
-    // custom styles for heading classes go here
+    font-family: $tertiary-font-family;
+    font-size: $tertiary-large-font-size;
+
+    @media (max-width: $breakpoint-small-max) {
+        font-size: $tertiary-medium-font-size;
+    }
 }
 
 .uk-h4 {
-    // custom styles for heading classes go here
+    font-family: $tertiary-font-family;
+    font-size: $tertiary-small-font-size;
 }
 
 .uk-h5 {
-    // custom styles for heading classes go here
+    font-family: $secondary-font-family;
+    font-size: $secondary-small-font-size;
 }
 
 .uk-h6 {
